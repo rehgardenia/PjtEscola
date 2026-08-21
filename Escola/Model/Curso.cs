@@ -3,42 +3,49 @@ namespace Escola.Model;
 public class Curso
 {
     public int Id { get; set; }
-    public string Descricao { get; set; } 
-    public Disciplina?[] Disciplinas { get; set; } 
+    public string Descricao { get; set; } = "";
+    public Disciplina?[] Disciplinas { get; } = new Disciplina?[12];
 
-    public Curso()
+    public bool AdicionarDisciplina(Disciplina disciplina)
     {
-        Id = 0;
-        Descricao = string.Empty;
-        Disciplinas = new Disciplina[12]; // Inicializa o array de disciplinas com capacidade para 10 disciplinas
-    }
-    public bool adicionarDisciplina(Disciplina disciplina)
-    {
-        if (disciplina != null) // Não é nulo
+        for (int i = 0; i < Disciplinas.Length; i++)
         {
-            for (int i = 0; i < Disciplinas.Length; i++)
+            if (Disciplinas[i] != null && Disciplinas[i]!.Id == disciplina.Id)
             {
-                if (Disciplinas[i] != null && Disciplinas[i].Id == disciplina.Id) // Já está adicionada
-                {
-                    return false;
-                }
-                else if (Disciplinas[i] == null) // Vaga disponível
-                {
-                    Disciplinas[i] = disciplina;
-                    return true;
-                }
+                return false;
             }
-         }
-        return false;
-    }
-    public bool removerDisciplina(Disciplina disciplina)
-    {
-        if (disciplina == null)
-        return false;
+        }
 
         for (int i = 0; i < Disciplinas.Length; i++)
         {
-            if (Disciplinas[i] != null && Disciplinas[i].Id == disciplina.Id)
+            if (Disciplinas[i] == null)
+            {
+                Disciplinas[i] = disciplina;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public Disciplina? PesquisarDisciplina(int id)
+    {
+        for (int i = 0; i < Disciplinas.Length; i++)
+        {
+            if (Disciplinas[i] != null && Disciplinas[i]!.Id == id)
+            {
+                return Disciplinas[i];
+            }
+        }
+
+        return null;
+    }
+
+    public bool RemoverDisciplina(int id)
+    {
+        for (int i = 0; i < Disciplinas.Length; i++)
+        {
+            if (Disciplinas[i] != null && Disciplinas[i]!.Id == id)
             {
                 Disciplinas[i] = null;
                 return true;
@@ -47,16 +54,4 @@ public class Curso
 
         return false;
     }
-    public Disciplina? pesquisarDisciplina(Disciplina disciplina)
-    {
-        for (int i = 0; i < Disciplinas.Length; i++)
-        {
-            if (Disciplinas[i] != null && Disciplinas[i].Id == disciplina.Id)
-            {
-                return Disciplinas[i];
-            }
-        }
-        return null;
-    }
- 
 }
