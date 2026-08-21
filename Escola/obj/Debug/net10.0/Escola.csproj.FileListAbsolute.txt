@@ -1,0 +1,14 @@
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.AssemblyInfoInputs.cache
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.AssemblyInfo.cs
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.csproj.CoreCompileInputs.cache
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\bin\Debug\net10.0\Escola.exe
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\bin\Debug\net10.0\Escola.deps.json
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\bin\Debug\net10.0\Escola.runtimeconfig.json
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\bin\Debug\net10.0\Escola.dll
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\bin\Debug\net10.0\Escola.pdb
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.dll
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\refint\Escola.dll
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.pdb
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\Escola.genruntimeconfig.cache
+C:\Users\q0803799\Desktop\DEV\PjtEscola\Escola\obj\Debug\net10.0\ref\Escola.dll
