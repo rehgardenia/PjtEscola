@@ -125,20 +125,10 @@ A aplicação oferece um menu interativo com as seguintes opções:
 4. Matricular alunos em disciplinas
 5. Consultar informações conforme necessário
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
 
 ## 📝 Licença
 
 Este projeto é fornecido como está, sem nenhuma licença específica.
-
-## 👨‍💻 Autor
-
-Desenvolvido por Renata Gardenia.
 
 ---
 
